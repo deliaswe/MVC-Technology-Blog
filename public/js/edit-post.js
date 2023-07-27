@@ -42,7 +42,7 @@ const deleteCarPost = async (event) => {
     }
 };
 
-// envent listeners
+// event listeners
 const updateCarPostButton = document.querySelector('#update-car-post');
 
 if (updateCarPostButton) {
