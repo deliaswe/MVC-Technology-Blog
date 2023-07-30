@@ -1,10 +1,11 @@
 console.log("Sequelize version:", require('sequelize').version);
-const sequelize = require('sequelize');
-const bcrypt = require('bcrypt');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
+const bcrypt = require('bcryptjs');
 
 class User extends Model {
     checkPassword(loginPw) {
-        return bcrypt.compareSync(loginPw, this.password);
+        return bcryptjs.compareSync(loginPw, this.password);
     }
 }
 
@@ -13,7 +14,7 @@ User.init(
         // id column
         id: {
             // use the special Sequelize DataTypes object to define what type of data it is
-            type: sequelize.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
@@ -45,14 +46,14 @@ User.init(
     {
         hooks: {
             // set up beforeCreate lifecycle "hook" functionality
-            async beforeCreate(newUserData) {
-                newUserData.password = await bcrypt.hash(newUserData.password, 10);
-        return newUserData;
+            async beforeCreate(newUser) {
+                newUser.password = await bcryptjs.hash(newUser.password, 10);
+        return newUser;
         },
             // set up beforeUpdate lifecycle "hook" functionality
-            async beforeUpdate(updatedUserData) {
-                updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-        return updatedUserData;
+            async beforeUpdate(updatedUser) {
+                updatedUser.password = await bcryptjs.hash(updatedUser.password, 10);
+        return updatedUser;
         },
         },
         // pass in our imported sequelize
