@@ -14,6 +14,9 @@
     },
     "author": "Delia Young",
     "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/deliaswe/MVC-Technology-Blog/issues"
+    },
     "dependencies": {
         "bcryptjs": "^2.4.3",
         "bootstrap": "^5.3.1",
@@ -23,9 +26,7 @@
         "express-handlebars": "^7.1.0",
         "express-session": "^1.17.3",
         "handlebars": "^4.7.7",
-        "install": "^0.13.0",
         "mysql2": "^3.5.2",
-        "npm": "^9.8.1",
         "sequelize": "^6.32.1"
     }
 }

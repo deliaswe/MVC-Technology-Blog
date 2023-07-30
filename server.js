@@ -1,4 +1,5 @@
 // importing required dependencies and models
+const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const SequelizStore = require('connect-session-sequelize')(session.Store);
@@ -9,18 +10,7 @@ const hbs = exphbs.create({ helpers: require('./utils/helpers') });
 
 // setting up express and port
 const app = express();
-const PORT = process.env.PORT || 3001;
-
-// setting up session
-const sess = {
-    secret: 'Super secret secret',
-    cookie: {},
-    resave: false,
-    saveUninitialized: true,
-    store: new SequelizStore({
-        db: sequelize,
-    }),
-};
+const PORT = process.env.PORT || 3007;
 
 // using session
 app.use(session(sess));
