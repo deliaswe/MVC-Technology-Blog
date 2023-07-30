@@ -1,0 +1,29 @@
+{{!-- views and post.handlebars --}}
+<main class="container mt-5">
+    <article>
+    <h1>{{title}}</h1>
+    <p>Created by: {{user.username}} | Date: {{format_date createdAt}}</p>
+    <p>{{content}}</p>
+    </article>
+    {{#if logged_in}}
+    <form class="new-car-comment-form">
+        <div class="mb-3">
+            <label for="comment" class="form-label">Comment</label>
+            <textarea 
+            class="form-control" 
+            id="comment" 
+            rows="3" 
+            placeholder="Enter your comment here">
+            </textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Comment</button>
+    </form>
+    {{/if}}
+    <h2>Comments History:</h2>
+    {{#each comments}}
+    <div class="comment-mb-3">
+        <p>{{comment}}</p>
+        <p>Created by: {{user.username}} | Date: {{format_date createdAt}}</p>
+    </div>
+    {{/each}}
+</main>
