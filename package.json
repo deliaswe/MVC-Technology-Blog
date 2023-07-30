@@ -1,16 +1,29 @@
 {
-"name": "mvc-technology-blog",
-"version": "1.0.0",
-"description": "",
-"main": "server.js",
-"scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-},
-"repository": {
-"type": "git",
-"url": "https://github.com/deliaswe/MVC-Technology-Blog"
-},
-"author": "Delia Young",
-"license": "MIT"
+    "name": "mvc-technology-blog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/deliaswe/MVC-Technology-Blog"
+    },
+    "author": "Delia Young",
+    "license": "MIT",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "connect-session-sequelize": "^7.1.7",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "express-handlebars": "^7.1.0",
+        "express-session": "^1.17.3",
+        "handlebars": "^4.7.7",
+        "install": "^0.13.0",
+        "mysql2": "^3.5.2",
+        "npm": "^9.8.1",
+        "sequelize": "^6.32.1"
+    }
 }
