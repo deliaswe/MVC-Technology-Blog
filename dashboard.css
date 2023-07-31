@@ -1,0 +1,40 @@
+.background {
+background-image: url(/images/bmw-m3-m4.png);
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+    .post-container {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.post-container:hover {
+    background-color: #cc6262;
+    border-right: 1em solid #f5f5f5;
+    border-radius: 0.5em;
+}
+
+/*body {
+    background-image: url('/images/Users/deliayoung/Desktop/bmw-m3-m4.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* responsive features */
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+/* css for large desktop screens */
+}
+
+@media screen and (min-width: 767px) and (orientation: portrait) {
+    /* css for tablet screens */
+}
+
+@media screen and (max-width: 767px) {
+    /* css for mobile screens */
+    }
