@@ -1,5 +1,5 @@
 .background {
-background-image: url(/images/bmw-m3-m4.png);
+background-image: url('/images/bmw-m3-m4.png');
 background-size: cover;
 background-attachment: fixed;
 background-position: center;

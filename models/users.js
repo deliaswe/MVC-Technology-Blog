@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 
 class User extends Model {
     checkPassword(loginPw) {
-        return bcryptjs.compareSync(loginPw, this.password);
+        return bcrypt.compareSync(loginPw, this.password);
     }
 }
 
@@ -47,12 +47,12 @@ User.init(
         hooks: {
             // set up beforeCreate lifecycle "hook" functionality
             async beforeCreate(newUser) {
-                newUser.password = await bcryptjs.hash(newUser.password, 10);
+                newUser.password = await bcrypt.hash(newUser.password, 10);
         return newUser;
         },
             // set up beforeUpdate lifecycle "hook" functionality
             async beforeUpdate(updatedUser) {
-                updatedUser.password = await bcryptjs.hash(updatedUser.password, 10);
+                updatedUser.password = await bcrypt.hash(updatedUser.password, 10);
         return updatedUser;
         },
         },

@@ -32,7 +32,7 @@ app.use(express.static('public'));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.get('/', (req, res) => {
-    res.render('homepage');
+    res.render('homepage', { logged_in: true});
 });
 
 // test the connection to the database
@@ -73,8 +73,41 @@ app.use(session({
     //saveUninitialized: true
 //}));
 
+// Import the models
+//const User = require('./models/Users');
+//const Post = require('./models/Post');
+//const Comment = require('./models/Comment');
+
+// Define the associations between the models
+//User.hasMany(Post, {
+   // foreignKey: 'user_id',
+    //onDelete: 'CASCADE',
+//});
+
+//Post.belongsTo(User, {
+    //foreignKey: 'user_id',
+//});
+
+//User.hasMany(Comment, {
+    //foreignKey: 'user_id',
+    //onDelete: 'CASCADE',
+//});
+
+//Comment.belongsTo(User, {
+   // foreignKey: 'user_id',
+//});
+
+//Post.hasMany(Comment, {
+    //foreignKey: 'post_id',
+   // onDelete: 'CASCADE',
+//});
+
+//Comment.belongsTo(Post, {
+    //foreignKey: 'post_id',
+//});
+
 // syncing sequelize models to the database, then turn on the server
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
     app.listen(3007, () => console.log(`listening on http://localhost:3007`));
 }
 );
