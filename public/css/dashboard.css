@@ -12,7 +12,7 @@ background-repeat: no-repeat;
 
 .post-container:hover {
     background-color: #cc6262;
-    border-right: 1em solid #f5f5f5;
+    border-right: 1em solid #deb0b0;
     border-radius: 0.5em;
 }
 

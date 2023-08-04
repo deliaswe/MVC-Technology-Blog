@@ -2,27 +2,27 @@ const { Post } = require('../models');
 const postData = [
     {
         title: 'First Car Blog Post',
-        content: 'This is my first car blog post. I am so excited to share my car with you!',
+        content: 'This is my first car blog post. The red BMW M3 Competition is 🔥',
         user_id: 1,
     },
     {
         title: 'Second Car Blog Post',
-        content: 'This is my second car blog post. I am so excited to share my car with you!',
+        content: 'I am so in love with BMW M3 and M4 💚💙🖤',
         user_id: 2,
     },
     {
         title: 'Third Car Blog Post',
-        content: 'This is my third car blog post. I am so excited to share my car with you!',
+        content: 'This line up is SICK!',
         user_id: 3,
     },
     {
         title: 'Fourth Car Blog Post',
-        content: 'This is my fourth car blog post. I am so excited to share my car with you!',
+        content: 'The big grills on the BMW is dope!',
         user_id: 4,
     },
     {
         title: 'Fifth Car Blog Post',
-        content: 'This is my fifth car blog post. I am so excited to share my car with you!',
+        content: 'BMW car clubs are the best!',
         user_id: 5,
     },
 ];
