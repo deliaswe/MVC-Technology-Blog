@@ -41,7 +41,7 @@
 - https://sequelize.org/
 
 ## Usage
-
+- 
 ## Test
 - To connect to the MySQL shell: mysql - u root -p
 - Once logged into MySQL in terminal enter: source db/schema.sql
