@@ -17,7 +17,7 @@ const postData = [
     },
     {
         title: 'Fourth Car Blog Post',
-        content: 'The big grills on the BMW is dope!',
+        content: 'The big grill on the BMWs are dope!',
         user_id: 4,
     },
     {
