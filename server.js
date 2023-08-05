@@ -55,6 +55,6 @@ app.use(session({
 app.use (routes)
 
 sequelize.sync({ force: false }).then(() => {
-    app.listen(3007, () => console.log(`listening on http://localhost:3007`));
+    app.listen(PORT, () => console.log(`listening on http://localhost:3007`));
 }
 );
