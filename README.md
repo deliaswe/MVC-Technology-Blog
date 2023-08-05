@@ -43,7 +43,7 @@
 ## Usage
 <img width="1151" alt="Delias-carblog" src="https://github.com/deliaswe/MVC-Technology-Blog/assets/113808453/b48c777e-1a95-4c1f-8a0a-0d151f39c98b">
 
-https://github.com/deliaswe/MVC-Technology-Blog/assets/113808453/bebeca74-87ad-4b6b-84db-adb70ade34f8
+https://github.com/deliaswe/MVC-Technology-Blog/assets/113808453/bea8d6f3-5829-471b-815c-c824a3013cd0
 
 ## Test
 - To connect to the MySQL shell: mysql - u root -p
