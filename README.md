@@ -2,8 +2,8 @@
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
-* [Links](#links)
 * [Usage](#usage)
+* [Links](#links)
 * [Test](#test)
 * [Contributing](#contributing)
 * [License](#license)
@@ -31,6 +31,11 @@
 
 - Open your web browser and enter http://localhost:3007 to access the website.
 
+## Usage
+<img width="1151" alt="Delias-carblog" src="https://github.com/deliaswe/MVC-Technology-Blog/assets/113808453/b48c777e-1a95-4c1f-8a0a-0d151f39c98b">
+
+https://github.com/deliaswe/MVC-Technology-Blog/assets/113808453/bea8d6f3-5829-471b-815c-c824a3013cd0
+
 ## Links
 - Heroku: https://mysterious-dawn-30420-cae1160e815b.herokuapp.com/
 
@@ -39,11 +44,6 @@
 - https://www.npmjs.com/package/express-handlebars
 - https://handlebarsjs.com/guide/#simple-expressions
 - https://sequelize.org/
-
-## Usage
-<img width="1151" alt="Delias-carblog" src="https://github.com/deliaswe/MVC-Technology-Blog/assets/113808453/b48c777e-1a95-4c1f-8a0a-0d151f39c98b">
-
-https://github.com/deliaswe/MVC-Technology-Blog/assets/113808453/bea8d6f3-5829-471b-815c-c824a3013cd0
 
 ## Test
 - To connect to the MySQL shell: mysql -u root -p
