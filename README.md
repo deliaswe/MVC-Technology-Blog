@@ -46,7 +46,7 @@
 https://github.com/deliaswe/MVC-Technology-Blog/assets/113808453/bea8d6f3-5829-471b-815c-c824a3013cd0
 
 ## Test
-- To connect to the MySQL shell: mysql - u root -p
+- To connect to the MySQL shell: mysql -u root -p
 - Once logged into MySQL in terminal enter: source db/schema.sql
 - To seed the database: npm run seed
 - To start the server: node start
